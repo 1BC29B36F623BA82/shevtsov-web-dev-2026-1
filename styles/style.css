@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+.first {
+}
+
+.foodnet {
+	padding-left: 3rem;
+	padding-bottom: 2rem;
+	max-width: 40rem;
+}
+
+.mid {
+	padding-left: 3rem;
+	padding-bottom: 2rem;
+}
+
+.desc {
+	padding-left: 3rem;
+	padding-bottom: 1rem;
+	width: 790px;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.bottom_par {
+	padding-left: 2rem;
+	padding-top: 1.5rem;
+	font-size: 18px;
+}
+
+* {
+	margin: 0px;
+  font-family: "Jost", sans-serif;
+  font-style: normal;
+	box-sizing: border-box;
+}
+
+
+
+
+header {
+	padding-left: 3rem;
+	padding-top: 3rem;
+	a:link, a:visited { color: #000; text-decoration: none; }
+	a:hover { color: #ff7556; text-decoration: underline;}
+}
+
+nav {
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	font-size: 20px;
+	display: flex;
+	align-items: start;
+  column-gap: 16px;
+}
+
+h1 {
+	font-size: 32px;
+  color: green;
+}
+
+h2 {
+	padding-bottom: 1rem;
+	font-size: 24px;
+}
+
+img {
+	padding-left: 3rem;
+	width: 650px;
+	max-width: 1200px;
+}
+
+
+
+table, th, td {
+  border: 1px solid;
+  border-collapse: collapse;
+  min-width: 2rem;
+  height: 3rem;
+  max-width: 32rem;
+}
+
+th, td {
+	text-align: center;
+	max-width: 19rem;
+	font-weight: 500;
+
+}
+
+footer {
+	height: 5rem;
+	background-color: #000;
+	a:link, a:visited { color: #FFF; text-decoration: none; }
+	a:hover { color: #ff7556; text-decoration: underline;
+}
+
