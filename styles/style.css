@@ -4,6 +4,8 @@
 	font-size: 62.5%;
 }
 
+#active { color: tomato;}
+
 .first {
 }
 
@@ -34,8 +36,8 @@
 
 * {
 	margin: 0px;
-  font-family: "Jost", sans-serif;
-  font-style: normal;
+ 	font-family: "Jost", sans-serif;
+  	font-style: normal;
 	box-sizing: border-box;
 }
 
@@ -44,27 +46,36 @@
 	min-height: 100%;
 	max-width: 1400px;
 	margin: 0 auto;
+	img {
+	padding-left: 48px;
+	width: 67%;
+	}
 }
+
 
 header {
 	padding-left: 48px;
-	padding-top: 48px;
-	a:link, a:visited { color: #000; text-decoration: none; }
-	a:hover { color: #ff7556; text-decoration: underline;}
-}
-
-nav {
-	padding-top: 32px;
-	padding-bottom: 32px;
-	font-size: 20px;
 	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	gap: 15px;
+	/* padding-left: 48px;
+	padding-top: 48px; */
+	:link, :visited { color: #000; text-decoration: none; }
+	a:hover { color: #ff7556; text-decoration: underline;}
+} 
+nav {
+	/* padding-top: 32px;
+	padding-bottom: 32px; */
+	font-size: 20px;
+	/* display: flex;
 	align-items: start;
-  column-gap: 16px;
+  	column-gap: 16px; */
 }
 
 h1 {
 	font-size: 3.2rem;
-  color: green;
+  	color: green;
 }
 
 h2 {
@@ -72,10 +83,7 @@ h2 {
 	font-size: 2.4rem;
 }
 
-img {
-	padding-left: 48px;
-	width: 67%;
-}
+
 
 
 table, th, td {
@@ -92,10 +100,36 @@ th, td {
 	font-weight: 500;
 }
 
+/*Laba №2 code down there */
+
+.soups {
+	display: grid;
+	flex-direction: row;
+}
+
+.idkyet {
+	display: grid;
+	img {
+		width: 20%;
+	}
+}
+
+
+
+
+/* footer... */
+
 footer {
 	height: 80px;
 	background-color: #000;
 	a:link, a:visited { color: #FFF; text-decoration: none; }
 	a:hover { color: #ff7556; text-decoration: underline;
+
 }
+
+
+
+
+
+
 
