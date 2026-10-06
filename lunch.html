@@ -86,7 +86,7 @@
 						<img src="images/beverages/applejuice.jpg" alt="Напиток">
 						<p>399₽</p>
 						<p>Яблочный суп</p>
-						<p>Вес/объем</p>
+						<p>1л.</p>
 						<button>Добавить</button>
 					</div>
 					<div class="card">
@@ -97,6 +97,88 @@
 						<button>Добавить</button>
 					</div>
 				</div>
+			</section>
+			<section class="zakaz">
+				<h2>Сделать заказ</h2>
+				<form class="order" action="https://httpbin.org/post" method="post">
+					<div class="choices">
+						<h3>Ваш заказ</h3>
+
+						<label>Суп
+							<select name="soup" placeholder="Выб">
+								<option value="nothing" selected>--- Выберите суп ---</option>
+								<option value="gazpacho" >Гаспачо</option>
+								<option value="mushroom_soup">Грибной суп</option>
+								<option value="norwegian_soup">Норвежский</option>
+							</select>
+						</label>
+
+						<label>Главное блюдо
+							<select name="maincourse">
+								<option value="nothing" selected>--- Выберите главное блюдо ---</option>
+								<option value="friedpotatoeswithmushrooms1">Картошка с грибами</option>
+								<option value="chickencutletsandmashedpotatoes">Котлеты из курицы с картофельным пюре</option>
+								<option value="lasagna">Лазанья</option>
+							</select>
+						</label>
+
+						<label>Напиток
+							<select name="drink">
+								<option value="nothing" selected>--- Выберите напиток ---</option>
+								<option value="orangejuice">Апельсиновый сок</option>
+								<option value="applejuice">Яблочный сок</option>
+								<option value="carrotjuice">Морковный сок</option>
+							</select>
+						</label>
+
+						<label>Комментарий к заказу
+							<textarea name="Comment"></textarea>
+						</label>
+					</div>
+
+					<div class="client_data">
+						<h3>Ваши данные</h3>
+
+						<label>Имя
+							<input type="text" name="name" required>
+						</label>
+
+						<label>Email
+							<input type="email" name="email">
+						</label>
+
+						<label>Номер телефона
+							<input type="tel" name="tel" placeholder="8-800-555-35-35">
+						</label>
+
+						<label>Адрес доставки
+							<input type="text" name="address" placeholder="Ул. Пушкина, д. 5, кв. 56">
+						</label>
+
+						
+						<fieldset class="timing">
+							<legend>Время доставки</legend>
+							<label class="radio"><input type="radio" name="timing" value="scheduled" checked>К указанному времени</label>
+							<label class="radio"><input type="radio" name="timing" value="asap">Как можно скорее</label>
+						</fieldset>
+
+						<label>Укажите время доставки
+							<input type="time" name="time" min="07:00" max="23:00" step="300" required>
+							<small>Доступно с 7:00 до 23:00</small>
+						</label>
+						 
+
+						<label class="checkbox">
+							<input type="checkbox" name="spam" value="1" checked>
+							Рассылка
+						</label>
+
+						<div class="buttons">
+							<button type="reset">Сбросить</button>
+							<button type="submit">Отправить</button>
+						</div>
+					</div>
+				</form>
 			</section>
 		</main>
 

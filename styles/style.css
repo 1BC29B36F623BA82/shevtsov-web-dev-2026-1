@@ -113,10 +113,10 @@ section {
 }
 
 section > div > div > img {
-	width: 100%;
-	min-width: 0;
+	width: 60%;
+	object-fit: cover;
 	border-radius: 35px;
-	margin-bottom: 16px;
+	margin-bottom: 12px;
 }
 
 section > div > div > button {
@@ -125,7 +125,7 @@ section > div > div > button {
 	border-radius: 10px;
 	cursor: pointer;
 	border: none;
-	margin-top: 16px;
+	margin-top: 4px;
 	font-size: 1.6rem;
 	font-weight: 600;
 }
@@ -135,28 +135,123 @@ section > div > div > button:hover {
 }
 
 section > div > div {
+	max-width: 700px;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-	padding: 30px 40px;
-	border-radius: 35px;
+	flex-wrap: wrap;
+	align-content: center;
+	padding: 16px 18px;
+	border-radius: 24px;
+	border: 2px solid transparent;
 	cursor: pointer;
 	background-color: white;
 	filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
 }
 
+
 section > div > div:hover {
 	border: 2px solid tomato;
 }
 
-section > div > div > p:nth-of-type(-n+2) {
-	font-size: 1.8rem;
+section > div > div > p {
+	font-size: 1.4rem;
 }
 
 section > div > div > p:nth-child(4n) {
 	color: grey;
 	margin-top: 10px;
 }
+
+.zakaz h2 {
+	padding-left: 0;
+	text-align: center;
+}
+
+.order {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 360px));
+	justify-content: center;
+	gap: 32px;
+	padding: 0 16px;
+	font-size: 1.6rem;
+}
+
+.choices,
+.client_data {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+
+.order h3 {
+	font-size: 2rem;
+}
+
+.order label {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.order label.checkbox {
+	flex-direction: row;
+	align-items: center;
+}
+
+.order select,
+.order input[type="text"],
+.order input[type="email"],
+.order input[type="tel"],
+.order input[type="time"] {
+	padding: 8px 12px;
+	font-size: 1.6rem;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.buttons {
+	display: flex;
+	gap: 12px;
+}
+
+.buttons button {
+	background-color: #f1eee9;
+	padding: 10px 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	border: none;
+	font-size: 1.6rem;
+	font-weight: 600;
+}
+
+.buttons button:hover {
+	background-color: #e8ddd4;
+}
+
+.timing {
+	border: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.order label.checkbox,
+.order label.radio {
+	flex-direction: row;
+	align-items: center;
+	gap: 8px;
+}
+
+.order textarea {
+	padding: 8px 12px;
+	font-size: 1.6rem;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	resize: vertical;
+}
+
+
 
 footer {
 	margin-top: 24px;
@@ -182,6 +277,10 @@ footer {
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+	.order {
+		grid-template-columns: minmax(0, 360px);
+	}
 }
 
 @media (max-width: 600px) {
@@ -194,6 +293,13 @@ footer {
 
 		h1 {
 		text-align: center;
+	}
+
+	h2 {
+		padding: 0;
+	}
+	header {
+		padding: 0;
 	}
 
 	nav {
