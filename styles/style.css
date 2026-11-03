@@ -41,6 +41,7 @@
 
 .container{
 	min-height: 100%;
+	max-width: 1200px;
 	img {
 	width: 67%;
 	height: auto;
@@ -51,7 +52,6 @@
 header {
 	padding-left: 48px;
 	padding-bottom: 24px;
-	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
 	gap: 15px;
@@ -84,7 +84,7 @@ h1 {
 
 h2 {
 	padding-bottom: 16px;
-	font-size: 2.4rem;
+	font-size: 24px;
 	padding-left: 48px;
 }
 
@@ -101,7 +101,7 @@ th, td {
 	font-weight: 500;
 }
 
-section > div {
+.food {
 	display: grid;
 	align-content: center;
 	grid-template-columns: repeat(3, 1fr);
@@ -112,14 +112,14 @@ section {
 	margin-bottom: 24px;
 }
 
-section > div > div > img {
-	width: 60%;
+.card > img {
+	max-width: 60%;
 	object-fit: cover;
 	border-radius: 35px;
 	margin-bottom: 12px;
 }
 
-section > div > div > button {
+.card > button {
 	background-color: #f1eee9;
 	padding: 10px 30px;
 	border-radius: 10px;
@@ -130,11 +130,11 @@ section > div > div > button {
 	font-weight: 600;
 }
 
-section > div > div > button:hover {
+.card > button:hover {
 	background-color: #e8ddd4;
 }
 
-section > div > div {
+.card {
 	max-width: 700px;
 	display: flex;
 	flex-direction: column;
@@ -149,17 +149,24 @@ section > div > div {
 }
 
 
-section > div > div:hover {
+.card:hover {
 	border: 2px solid tomato;
 }
 
 section > div > div > p {
-	font-size: 1.4rem;
+	font-size: 14px;
 }
 
 section > div > div > p:nth-child(4n) {
 	color: grey;
 	margin-top: 10px;
+}
+
+.wraap {
+	max-width: 1800px;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 .zakaz h2 {
@@ -173,7 +180,7 @@ section > div > div > p:nth-child(4n) {
 	justify-content: center;
 	gap: 32px;
 	padding: 0 16px;
-	font-size: 1.6rem;
+	font-size: 16px;
 }
 
 .choices,
@@ -183,8 +190,12 @@ section > div > div > p:nth-child(4n) {
 	gap: 16px;
 }
 
+.choices span{
+	padding-bottom: 16px;
+}
+
 .order h3 {
-	font-size: 2rem;
+	font-size: 20px;
 }
 
 .order label {
@@ -204,7 +215,7 @@ section > div > div > p:nth-child(4n) {
 .order input[type="tel"],
 .order input[type="time"] {
 	padding: 8px 12px;
-	font-size: 1.6rem;
+	font-size: 16px;
 	border: 1px solid #ccc;
 	border-radius: 10px;
 }
@@ -220,7 +231,7 @@ section > div > div > p:nth-child(4n) {
 	border-radius: 10px;
 	cursor: pointer;
 	border: none;
-	font-size: 1.6rem;
+	font-size: 16px;
 	font-weight: 600;
 }
 
@@ -249,8 +260,147 @@ section > div > div > p:nth-child(4n) {
 	border: 1px solid #ccc;
 	border-radius: 10px;
 	resize: vertical;
+	max-height: 215px;
 }
 
+.card.selected {
+	border: 2px solid tomato;
+}
+
+.order-item {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+
+.order-item[hidden] {
+	display: none;
+}
+
+.order small {
+	font-style: italic;
+}
+
+.empty {
+	font-style: oblique;
+	font-weight: bold;
+}
+
+.filters {
+	display: flex;
+	margin: 0 0 20px;
+}
+
+.filter-btn {
+	font-size: 20px;
+	padding-left: 48px;
+	background: none;
+	border: none;
+	color: green;
+	cursor: pointer;
+}
+
+.filter-btn:hover {
+	text-decoration: underline;
+}
+
+.filter-btn.active {
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.card[hidden] {
+	display: none;
+}
+
+/*lab 6 stuff*/
+
+.combos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px 0;
+  margin: 4px auto 0;
+  max-width: 1600px;
+}
+
+.combos h1 {
+  grid-column: 1 / -1; 
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.combo {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+	figure {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	}
+	img {
+	max-width: 48px;
+	height: auto;
+	}
+	img:hover {
+		transform:translateY(5px) scale(1.2);
+		transition-duration: 800ms;
+	}
+	figcaption {
+	margin-top: 4px;
+	font-size: 18px;
+	}
+}
+
+.combo:hover {
+	transform:translateY(5px) scale(1.2);
+	transition-duration: 800ms;
+}
+
+.combo .note {
+  font-size: 14px;
+}
+
+.notification-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.notification {
+  background: #fff;
+  padding: 32px 40px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 90%;
+}
+
+.notification p {
+  margin: 0 0 24px;
+  font-size: 20px;
+}
+
+.notification-btn {
+  padding: 10px 32px;
+  border: 2px solid tomato;
+  border-radius: 8px;
+  background: #fff;
+  color: tomato;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.notification-btn:hover {
+  background: tomato;
+  color: #fff;
+}
 
 
 footer {
@@ -261,6 +411,12 @@ footer {
 	a:link, a:visited { color: #FFF; text-decoration: none; }
 	a:hover { color: #ff7556; text-decoration: underline; }
 }
+
+
+
+
+
+
 
 
 @media (max-width: 800px) {
@@ -281,6 +437,8 @@ footer {
 	.order {
 		grid-template-columns: minmax(0, 360px);
 	}
+
+	section > div > div > p {max-width: 210px;}
 }
 
 @media (max-width: 600px) {
@@ -335,6 +493,6 @@ footer {
 		font-size: 1.2rem; 
 	}
 	.card {
-		padding: 20px 16px; /* уменьшаем отступы на совсем узких */
+		padding: 20px 16px;
 	}
 }

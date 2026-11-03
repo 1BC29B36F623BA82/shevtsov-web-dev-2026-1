@@ -3,11 +3,14 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>wh ocares</title>
+		<title>Foodconstruct - Ланч</title>
 		<link rel="stylesheet" href="styles/style.css">
+		<script src="scripts/dishes.js" defer></script>
+		<script src="scripts/script.js" defer></script>
 	</head>
 	<body>
 		<header>
+			<div class="wraap">
 			<h1>Food construck</h1>
 			<nav>
 				<a href="index.html">О нас</a>
@@ -15,127 +18,147 @@
 				<a href="#">Заказы</a>
 				<a href="#">Контакты</a>
 			</nav>
+			</div>
 		</header>
 
 		<main>
-			<section class="soups">
-				<h2>Выберите суп</h2>
-				<div class="food">
-					<div class="card">
-						<img src="images/soups/gazpacho.jpg" alt="Суп">
-						<p>559₽</p>
-						<p>Гаспачо</p>
-						<p>300г.</p>
-						<button>Добавить</button>
-					</div>
-					<div class="card">
-						<img src="images/soups/mushroom_soup.jpg" alt="Суп">
-						<p>499₽</p>
-						<p>Грибной суп</p>
-						<p>300г.</p>
-						<button>Добавить</button>
-					</div>
-					<div class="card">
-						<img src="images/soups/norwegian_soup.jpg" alt="Суп">
-						<p>699₽</p>
-						<p>Норвежский суп</p>
-						<p>305г.</p>
-						<button>Добавить</button>
-					</div>
-				</div>
-			</section>
+			<section class="combos">
+			<h1>Доступные для заказа комбо</h1>
 
-			<section class="maincourses">
-				<h2>Выберите главное блюдо</h2>
-				<div class="food">
-					<div class="card">
-						<img src="images/main_course/friedpotatoeswithmushrooms1.jpg" alt="Главное блюдо">
-						<p>799₽</p>
-						<p>Картошка с грибами</p>
-						<p>250г.</p>
-						<button>Добавить</button>
-					</div>
-					<div class="card">
-						<img src="images/main_course/chickencutletsandmashedpotatoes.jpg" alt="Главное блюдо">
-						<p>900₽</p>
-						<p>Котлеты из курицы с картофельным пюре</p>
-						<p>300г.</p>
-						<button>Добавить</button>
-					</div>
-					<div class="card">
-						<img src="images/main_course/lasagna.jpg" alt="Главное блюдо">
-						<p>499₽</p>
-						<p>Лазанья</p>
-						<p>200г.</p>
-						<button>Добавить</button>
-					</div>
-				</div>
-			</section>
+			<div class="combo">
+				<figure>
+				<img src="images/icons/soup.png" alt="">
+				<figcaption>Суп</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/main.png" alt="">
+				<figcaption>Главное блюдо</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/salad.png" alt="">
+				<figcaption>Салат</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/drink.png" alt="">
+				<figcaption>Напиток</figcaption>
+				</figure>
+			</div>
 
-			<section class="drinks">
-				<h2>Выберите напиток</h2>
-				<div class="food">
-					<div class="card">
-						<img src="images/beverages/orangejuice.jpg" alt="Напиток">
-						<p>400₽</p>
-						<p>Апельсиновый сок</p>
-						<p>400мл.</p>
-						<button>Добавить</button>
-					</div>
-					<div class="card">
-						<img src="images/beverages/applejuice.jpg" alt="Напиток">
-						<p>399₽</p>
-						<p>Яблочный суп</p>
-						<p>1л.</p>
-						<button>Добавить</button>
-					</div>
-					<div class="card">
-						<img src="images/beverages/carrotjuice.jpg" alt="Напиток">
-						<p>123₽</p>
-						<p>Морковный сок</p>
-						<p>500мл.</p>
-						<button>Добавить</button>
-					</div>
-				</div>
+			<div class="combo">
+				<figure>
+				<img src="images/icons/soup.png" alt="">
+				<figcaption>Суп</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/main.png" alt="">
+				<figcaption>Главное блюдо</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/drink.png" alt="">
+				<figcaption>Напиток</figcaption>
+				</figure>
+			</div>
+
+			<div class="combo">
+				<figure>
+				<img src="images/icons/soup.png" alt="">
+				<figcaption>Суп</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/salad.png" alt="">
+				<figcaption>Салат</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/drink.png" alt="">
+				<figcaption>Напиток</figcaption>
+				</figure>
+			</div>
+
+			<div class="combo">
+				<figure>
+				<img src="images/icons/main.png" alt="">
+				<figcaption>Главное блюдо</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/salad.png" alt="">
+				<figcaption>Салат</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/drink.png" alt="">
+				<figcaption>Напиток</figcaption>
+				</figure>
+			</div>
+
+			<div class="combo">
+				<figure>
+				<img src="images/icons/main.png" alt="">
+				<figcaption>Главное блюдо</figcaption>
+				</figure>
+				<figure>
+				<img src="images/icons/drink.png" alt="">
+				<figcaption>Напиток</figcaption>
+				</figure>
+			</div>
+
+			<div class="combo">
+				<figure>
+				<img src="images/icons/desert.png" alt="">
+				<figcaption>Десерт</figcaption>
+				<figcaption class="note">(Можно добавить к любому заказу)</figcaption>
+				</figure>
+			</div>
 			</section>
+			<div class="wraap" id="menu-container"></div>
 			<section class="zakaz">
+				<div class="wraap">
 				<h2>Сделать заказ</h2>
 				<form class="order" action="https://httpbin.org/post" method="post">
 					<div class="choices">
 						<h3>Ваш заказ</h3>
 
-						<label>Суп
-							<select name="soup" placeholder="Выб">
-								<option value="nothing" selected>--- Выберите суп ---</option>
-								<option value="gazpacho" >Гаспачо</option>
-								<option value="mushroom_soup">Грибной суп</option>
-								<option value="norwegian_soup">Норвежский</option>
-							</select>
-						</label>
+						<p id="order-empty" style="font-size: xx-large;"><b>Ничего не выбрано</b></p>
 
-						<label>Главное блюдо
-							<select name="maincourse">
-								<option value="nothing" selected>--- Выберите главное блюдо ---</option>
-								<option value="friedpotatoeswithmushrooms1">Картошка с грибами</option>
-								<option value="chickencutletsandmashedpotatoes">Котлеты из курицы с картофельным пюре</option>
-								<option value="lasagna">Лазанья</option>
-							</select>
-						</label>
+						<div id="order-items" hidden>
+							<div class="order-item">
+								<strong>Суп</strong>
+								<span id="order-soup">Блюдо не выбрано</span>
+								<input type="hidden" name="soup">
+							</div>
 
-						<label>Напиток
-							<select name="drink">
-								<option value="nothing" selected>--- Выберите напиток ---</option>
-								<option value="orangejuice">Апельсиновый сок</option>
-								<option value="applejuice">Яблочный сок</option>
-								<option value="carrotjuice">Морковный сок</option>
-							</select>
-						</label>
+							<div class="order-item">
+								<strong>Стартер/салат</strong>
+								<span id="order-starter">Напиток не выбран</span>
+								<input type="hidden" name="starter">
+							</div>
+
+							<div class="order-item">
+								<strong>Главное блюдо</strong>
+								<span id="order-main_course">Блюдо не выбрано</span>
+								<input type="hidden" name="maincourse">
+							</div>
+
+							<div class="order-item">
+								<strong>Десерт</strong>
+								<span id="order-dessert">Десерт не выбран</span>
+								<input type="hidden" name="dessert">
+							</div>
+
+							<div class="order-item">
+								<strong>Напиток</strong>
+								<span id="order-drink">Напиток не выбран</span>
+								<input type="hidden" name="drink">
+							</div>
+						</div>
+
+						<div class="order-item" id="order-total" hidden>
+							<strong>Стоимость заказа</strong>
+							<span id="total-price">0₽</span>
+						</div>
 
 						<label>Комментарий к заказу
-							<textarea name="Comment"></textarea>
+							<textarea name="comment"></textarea>
 						</label>
 					</div>
-
 					<div class="client_data">
 						<h3>Ваши данные</h3>
 
@@ -144,15 +167,21 @@
 						</label>
 
 						<label>Email
-							<input type="email" name="email">
+							<input type="email" name="email" placeholder="sobaka@budka.ru" required>
+						</label>
+
+						<label class="checkbox">
+							<input type="checkbox" name="spam" value="1" checked>
+							Рассылка
 						</label>
 
 						<label>Номер телефона
-							<input type="tel" name="tel" placeholder="8-800-555-35-35">
+							<input type="tel" name="tel" placeholder="8-800-555-35-35" required>
 						</label>
 
 						<label>Адрес доставки
-							<input type="text" name="address" placeholder="Ул. Пушкина, д. 5, кв. 56">
+							<input type="text" name="address" placeholder="Ул. Пушкина, д. 5, кв. 56" required>
+							<small>Доставка осуществляется только по Москве</small>
 						</label>
 
 						
@@ -168,10 +197,7 @@
 						</label>
 						 
 
-						<label class="checkbox">
-							<input type="checkbox" name="spam" value="1" checked>
-							Рассылка
-						</label>
+
 
 						<div class="buttons">
 							<button type="reset">Сбросить</button>
@@ -179,6 +205,7 @@
 						</div>
 					</div>
 				</form>
+				</div>
 			</section>
 		</main>
 
